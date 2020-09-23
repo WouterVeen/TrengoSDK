@@ -1,0 +1,17 @@
+{
+    "name": "solvari/trengo",
+    "description": "Trengo-SDK created by Wouter Veen",
+    "version": "1.0.0",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5@dev",
+        "nesbot/carbon": "^2.0@dev",
+        "solvari/whatsapp": "1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Wouter Veen",
+            "email": "w.veen@solvari.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
