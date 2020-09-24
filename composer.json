@@ -3,7 +3,7 @@
     "description": "Trengo-SDK created by Wouter Veen",
     "version": "1.0.0",
     "require": {
-        "guzzlehttp/guzzle": "^6.5@dev",
+        "guzzlehttp/guzzle": "^7.0.1",
         "nesbot/carbon": "^2.0@dev",
         "solvari/whatsapp": "1.0.0"
     },
