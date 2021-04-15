@@ -2,7 +2,7 @@
     "name": "solvari/trengo",
     "description": "Trengo-SDK created by Wouter Veen",
     "license": "MIT",
-    "version": "1.5.3",
+    "version": "1.5.5",
     "require": {
         "php": ">7.1.0",
         "guzzlehttp/guzzle": "^7.0.1",
