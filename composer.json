@@ -1,7 +1,7 @@
 {
     "name": "solvari/trengo",
     "description": "Trengo-SDK created by Wouter Veen",
-    "version": "1.2.0",
+    "version": "1.5.2",
     "require": {
         "guzzlehttp/guzzle": "^7.0.1",
         "nesbot/carbon": "^2.0@dev",
