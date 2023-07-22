@@ -1,25 +1,25 @@
 {
-    "name": "solvari/trengo",
+    "name": "thecodebakery/trengo",
     "description": "Trengo-SDK created by Wouter Veen",
     "license": "MIT",
-    "version": "1.5.5",
     "require": {
         "php": ">7.1.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "nesbot/carbon": "^2.0@dev",
-        "solvari/whatsapp": "dev-master"
+        "solvari/whatsapp": "dev-master",
+        "laravel/framework": "^7.0|^8.0"
     },
     "authors": [
         {
             "name": "Wouter Veen",
-            "email": "w.veen@solvari.com"
+            "email": "wouterbrveen@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "Solvari\\Trengo\\TrengoServiceProvider"
+                "TheCodeBakery\\Trengo\\TrengoServiceProvider"
             ]
         }
     }

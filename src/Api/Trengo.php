@@ -1,31 +1,31 @@
 <?php
 
+namespace TheCodebakery\Trengo\Api;
 
-namespace Api;
-
-use Api\Traits\ContactGroup;
-use Api\Traits\Contacts;
-use Api\Traits\CustomFields;
-use Api\Traits\FileUpload;
-use Api\Traits\Labels;
-use Api\Traits\Profiles;
-use Api\Traits\QuickActions;
-use Api\Traits\QuickReplies;
-use Api\Traits\Request;
-use Api\Traits\SmsMessages;
-use Api\Traits\Teams;
-use Api\Traits\Tickets;
-use Api\Traits\Users;
-use Api\Traits\Util;
-use Api\Traits\Webhooks;
-use Api\Traits\WhatsApp;
+use GuzzleHttp\Client;
+use TheCodebakery\Trengo\Api\Traits\ContactGroup;
+use TheCodebakery\Trengo\Api\Traits\Contacts;
+use TheCodebakery\Trengo\Api\Traits\CustomFields;
+use TheCodebakery\Trengo\Api\Traits\FileUpload;
+use TheCodebakery\Trengo\Api\Traits\Labels;
+use TheCodebakery\Trengo\Api\Traits\Profiles;
+use TheCodebakery\Trengo\Api\Traits\QuickActions;
+use TheCodebakery\Trengo\Api\Traits\QuickReplies;
+use TheCodebakery\Trengo\Api\Traits\Request;
+use TheCodebakery\Trengo\Api\Traits\SmsMessages;
+use TheCodebakery\Trengo\Api\Traits\Teams;
+use TheCodebakery\Trengo\Api\Traits\Tickets;
+use TheCodebakery\Trengo\Api\Traits\Users;
+use TheCodebakery\Trengo\Api\Traits\Util;
+use TheCodebakery\Trengo\Api\Traits\Webhooks;
+use TheCodebakery\Trengo\Api\Traits\WhatsApp;
 
 
 /**
  * Class Trengo
  *
- * @author Wouter Veen w.veen@solvari.com
- * @copyright Solvari B.V. 2009-2019
+ * @author Wouter Veen wouterbrveen@gmail.com
+ * @copyright TheCodeBakery 1991-2023
  * @version V1.0.0
  * @package App\Domain\Services\Trengo
  */
@@ -71,7 +71,6 @@ class Trengo
      * Trengo api version and api url
      */
     CONST VERSION   = "v2/";
-    CONST BASE_URI  = 'https://app.trengo.eu/api/';
 
     /*
      * Trengo tickets statusses
@@ -109,9 +108,9 @@ class Trengo
     public function __construct()
     {
         $this->client = new CLient([
-            'base_uri' => self::BASE_URI.self::VERSION,
+            'base_uri' => config('trengo.api_base_url').self::VERSION,
             'headers' =>  [
-                'Authorization' => 'Bearer '.config('trengo.API_TOKEN')
+                'Authorization' => 'Bearer '.config('trengo.api_key')
             ]
         ]);
     }

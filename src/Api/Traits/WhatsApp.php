@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Api\Traits;
+namespace TheCodebakery\Trengo\Api\Traits;
 
-use Api\Trengo;
+use TheCodebakery\Trengo\Api\Trengo;
 trait WhatsApp
 {
 

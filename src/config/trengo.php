@@ -1,5 +1,6 @@
 <?php
 
 return [
-  "API_TOKEN" => env('TRENGO_API_TOKEN')
+  'api_key'           => env('TRENGO_API_KEY'),
+  'api_base_url'      => env('TRENGO_API_BASE_URL','https://app.trengo.eu/api/')
 ];

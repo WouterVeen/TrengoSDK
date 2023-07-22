@@ -1,5 +1,5 @@
 # TrengoSDK
-A Trengo SDK for PHP writen for Laravel.
+A Trengo SDK in PHP, writen for Laravel.
 
 # Instalation
-To install the SDK you need composer. If you have composer type `composer require solvari/trengo`
+To install the SDK you need composer. If you have composer type `composer require thecodebakery/trengo`

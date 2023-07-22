@@ -1,6 +1,6 @@
 <?php
 
-namespace Api\Traits;
+namespace TheCodeBakery\Trengo\Api\Traits;
 
 use Api\Trengo;
 

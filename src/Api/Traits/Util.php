@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Api\Traits;
+namespace TheCodeBakery\Trengo\Api\Traits;
 
-use Api\Trengo;
+use TheCodeBakery\Trengo\Api\Trengo;
 
 /**
  * Trait Util

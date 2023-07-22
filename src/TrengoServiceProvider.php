@@ -1,6 +1,6 @@
 <?php
 
-namespace Solvari\Trengo;
+namespace TheCodeBakery\Trengo;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -25,6 +25,6 @@ class TrengoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->app->make('Solvari\Trengo\TrengoApiController');
+        $this->app->make('TheCodeBakery\Trengo\TrengoApiController');
     }
 }
